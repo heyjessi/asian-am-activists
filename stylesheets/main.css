@@ -73,6 +73,20 @@ flex: 50%;
   }
 }
 /* Text styles */
+/* @font-face {
+  font-family: 'Inconsolata';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Inconsolata'), local('Inconsolata'), url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
+} */
+
+/* made mirage */
+@font-face { font-family: MADE Mirage; src: url('MADE-Mirage.otf'); } 
+@font-face { font-family: MADE Mirage; font-weight: bold; src: url('MADE-Mirage-Bold.otf');}
+
+/* inconsolata */
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
+
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
