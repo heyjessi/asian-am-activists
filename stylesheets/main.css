@@ -52,6 +52,8 @@ main {
 
 .row {
   display: flex;
+  /* makes the text shift down, also makes the rows smaller */
+  /* flex-wrap: wrap; */
 }
 
 .column {
@@ -83,6 +85,7 @@ flex: 50%;
 /* made mirage */
 @font-face { font-family: MADE Mirage; src: url('../MADE-Mirage-Reg.otf'); } 
 @font-face { font-family: MADE Mirage; font-weight: bold; src: url('../MADE-Mirage-Bold.otf');}
+@font-face { font-family: MADE Mirage Med; font-weight: bold; src: url('../MADE-Mirage-Med.otf');}
 
 /* inconsolata */
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
@@ -136,6 +139,12 @@ p, li {
   font-family:'MADE Mirage', Georgia, 'Times New Roman', Times, serif;
 }
 
+.quote {
+  font-family: 'MADE Mirage Med', Georgia, 'Times New Roman', Times, serif;
+  size:10px;
+  color: #e0c2ff;
+}
+
 .mirage {
   font-family:'MADE Mirage', Georgia, 'Times New Roman', Times, serif;
   font-size: 40px;
@@ -150,10 +159,12 @@ p, li {
 
 a {
   font-weight: bold;
+  color:  #e0c2ff;
   text-decoration: none;
 }
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  color:  #fdc3e6;
 }
 footer {
   background: #333;
@@ -273,10 +284,6 @@ footer li:first-child::before {
 html, body {
   background: #000;
   color: #aaa;
-}
-
-a {
-  text-decoration: underline;
 }
 
 .content {
