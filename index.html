@@ -7,11 +7,14 @@
     <!-- Custom styling -->
     <link href="/asian-am-activists/stylesheets/scroll.css" rel="stylesheet">
     <link href="stylesheets/scroll.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap" rel="stylesheet">
   </head>
   <body>
+
     <header class="header">
+      <button type="button" class="button">Go to Activists</button>
       <h1 class="heading rellax-non-centered" data-rellax-speed="-5">A Young Organizer's Guide to Asian American Activists</h1>
     </header>
     <article class="content">
@@ -30,7 +33,7 @@
       
 
       <!-- Instructions + Me -->
-      <div align="center" class="mirage"><b>How To Use This Tool</b></div><br><br>
+      <div align="center" class="mirage" id="instruct"><br><br><b>How To Use This Tool</b></div><br><br>
       <div class="row">
         <div class="column">
           <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
@@ -49,7 +52,7 @@
         <div class="column blurb">
           <ol>
             <li>Click on a specific activist below to jump to their bio or scroll down this tool.</li>
-            <li>Hover over the illustration to see a photograph of the activist!</li>
+            <li>Hover over the illustration to see a photograph of the activist! {not compatible with mobile yet}</li>
             <li>If you would like to see more information about a certain actvist, or share any other feedback with me, fill out this google form.</li>
             <!-- <li>Finally, this project would not be possible without the advice of to Emily Hong... for the design advice and feedback during this process.</li> -->
           </ol>
@@ -60,105 +63,112 @@
       <!-- with squares -->
       <div class="row"> 
         <div class="column">
-            <img src="images/squares/yuri.png" class="project">
+            <img src="images/squares/yuri.png" class="project" id="yuri1">
         </div>
         <div class="column">
-            <img src="images/squares/simon.png" class="project">
+            <img src="images/squares/simon.png" class="project" id="simon1">
         </div>
         <div class="column">
-            <img src="images/squares/sally.png" class="project">
+            <img src="images/squares/sally.png" class="project" id="sally1">
         </div>
         <div class="column">
-            <img src="images/squares/philip.png" class="project">
+            <img src="images/squares/philip.png" class="project" id="philip1">
         </div>
       </div>
       <div class="row"> 
         <div class="column">
-            <img src="images/squares/grace.png" class="project">
+            <img src="images/squares/grace.png" class="project" id="grace1">
         </div>
         <div class="column">
-            <img src="images/squares/fred.png" class="project">
+            <img src="images/squares/fred.png" class="project" id="fred1">
         </div>
         <div class="column">
-            <img src="images/squares/chanchanit.png" class="project">
+            <img src="images/squares/chanchanit.png" class="project" id="chanchanit1">
         </div>
         <div class="column">
-          <img src="images/squares/patsy.png" class="project">
-        </div>
-      </div>
-
-      <div class="row"> 
-        <div class="column">
-            <img src="images/squares/helen.png" class="project">
-        </div>
-        <div class="column">
-            <img src="images/squares/arn.png" class="project">
-        </div>
-        <div class="column">
-            <img src="images/squares/kalpana.png" class="project">
-        </div>
-        <div class="column">
-          <img src="images/squares/eqbal.png" class="project">
+          <img src="images/squares/patsy.png" class="project" id="patsy1">
         </div>
       </div>
 
       <div class="row"> 
         <div class="column">
-            <img src="images/squares/lala.png" class="project">
+            <img src="images/squares/helen.png" class="project" id="helen1">
         </div>
         <div class="column">
-            <img src="images/squares/larry.png" class="project">
+            <img src="images/squares/arn.png" class="project" id="arn1">
         </div>
         <div class="column">
-          <img src="images/squares/may.png" class="project">
+            <img src="images/squares/kalpana.png" class="project" id="kalpana1">
         </div>
         <div class="column">
-          <img src="images/squares/john.png" class="project">
+          <img src="images/squares/eqbal.png" class="project" id="eqbal1">
+        </div>
+      </div>
+
+      <div class="row"> 
+        <div class="column">
+            <img src="images/squares/lala.png" class="project" id="lala1">
+        </div>
+        <div class="column">
+            <img src="images/squares/larry.png" class="project" id="larry1">
+        </div>
+        <div class="column">
+          <img src="images/squares/may.png" class="project" id="may1">
+        </div>
+        <div class="column">
+          <img src="images/squares/john.png" class="project" id="john1">
       </div>
       </div>
       <p></p>
 
       <!-- May Chen -->
-      <img src="names/may.png" class="project" align="center"><br><br><br><br>
-      <div class="row">
-        <div class="column">
-          <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-            <div class="flipper">
-              <div class="front">
-                <!-- front content -->
-                <img src="images/squares/may.png" class="project">
-              </div>
-              <div class="back">
-                <!-- back content -->
-                <img src="photos/may.png" class="photo">
+      <div id="may2"><br><br><br><br>
+        <img src="names/may.png" class="project" align="center"><br><br><br><br>
+        <div class="row">
+          <div class="column">
+            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+              <div class="flipper">
+                <div class="front">
+                  <!-- front content -->
+                  <img src="images/squares/may.png" class="project">
+                </div>
+                <div class="back">
+                  <!-- back content -->
+                  <img src="photos/may.png" class="photo">
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="column blurb">May Chen is </div>
+          <div class="column blurb">May Chen is </div>
       </div>
-
+      </div>
+      <br><br><br>
+      
       <!-- Yuri Kochiyama -->
-      <img src="names/yuri.png" class="project" align="center"><br><br><br><br>
-      <div class="row">
-        <div class="column">
-          <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-            <div class="flipper">
-              <div class="front">
-                <!-- front content -->
-                <img src="images/squares/yuri.png" class="project">
-              </div>
-              <div class="back">
-                <!-- back content -->
-                <img src="photos/yuri.jpg" class="photo">
+      <div id="yuri2"><br><br><br><br>
+        <img src="names/yuri.png" class="project" align="center" ><br><br><br><br>
+        <div class="row">
+          <div class="column">
+            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+              <div class="flipper">
+                <div class="front">
+                  <!-- front content -->
+                  <img src="images/squares/yuri.png" class="project">
+                </div>
+                <div class="back">
+                  <!-- back content -->
+                  <img src="photos/yuri.jpg" class="photo">
+                </div>
               </div>
             </div>
           </div>
+          <div class="column blurb">Yuri Kochiyama</div>
         </div>
-        <div class="column blurb">Yuri Kochiyama</div>
       </div>
-
+      <br><br>
+      
       <!-- Eqbal Ahmad -->
+      <div id="eqbal2"><br><br><br><br> 
       <img src="names/eqbal.png" class="project" align="center"><br><br><br><br>
       <div class="row">
         <div class="column">
@@ -177,48 +187,59 @@
         </div>
         <div class="column blurb">Eqbal Ahmad</div>
       </div>
+      </div>
+      <br><br><br>
 
-      <!-- Philip Vera Cruz -->
-      <img src="names/philip.png" class="project" align="center"><br><br><br><br>
-      <div class="row">
-        <div class="column">
-          <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-            <div class="flipper">
-              <div class="front">
-                <!-- front content -->
-                <img src="images/squares/philip.png" class="project">
-              </div>
-              <div class="back">
-                <!-- back content -->
-                <img src="photos/philip.jpg" class="photo">
+      
+      <!-- Philip Vera Cruz --> 
+      <div id="philip2"><br><br><br><br>
+        <img src="names/philip.png" class="project" align="center"><br><br><br><br>
+        <div class="row">
+          <div class="column">
+            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+              <div class="flipper">
+                <div class="front">
+                  <!-- front content -->
+                  <img src="images/squares/philip.png" class="project">
+                </div>
+                <div class="back">
+                  <!-- back content -->
+                  <img src="photos/philip.jpg" class="photo">
+                </div>
               </div>
             </div>
           </div>
+          <div class="column blurb">Philip Vera Cruz</div>
         </div>
-        <div class="column blurb">Philip Vera Cruz</div>
       </div>
-
+      <br><br>
+      
+      
       <!-- John Cho -->
-      <img src="names/john.png" class="project" align="center"><br><br><br><br>
-      <div class="row">
-        <div class="column">
-          <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-            <div class="flipper">
-              <div class="front">
-                <!-- front content -->
-                <img src="images/squares/john.png" class="project">
-              </div>
-              <div class="back">
-                <!-- back content -->
-                <img src="photos/john.jpg" class="photo">
+      <div id="john2"><br><br><br><br>
+        <img src="names/john.png" class="project" align="center"><br><br><br><br>
+        <div class="row">
+          <div class="column">
+            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+              <div class="flipper">
+                <div class="front">
+                  <!-- front content -->
+                  <img src="images/squares/john.png" class="project">
+                </div>
+                <div class="back">
+                  <!-- back content -->
+                  <img src="photos/john.jpg" class="photo">
+                </div>
               </div>
             </div>
           </div>
+          <div class="column blurb">John Cho</div>
         </div>
-        <div class="column blurb">John Cho</div>
       </div>
-
+      <br><br>
+      
       <!-- Helen Zia -->
+      <div id="helen2"><br><br><br><br>
       <img src="names/helen.png" class="project" align="center"><br><br><br><br>
       <div class="row">
         <div class="column">
@@ -237,7 +258,12 @@
         </div>
         <div class="column blurb">Helen Zia</div>
       </div>
+      </div>
+      <br><br>
+      
 
+      <div id="fred2"><br><br><br><br>
+      </div>
       <!-- Fred Ho -->
       <img src="names/fred.png" class="project" align="center"><br><br><br><br>
       <div class="row">
@@ -257,8 +283,10 @@
         </div>
         <div class="column blurb">Fred Ho</div>
       </div>
+      <br><br>
 
       <!-- Grace Lee Boggs -->
+      <div id="grace2"><br><br><br><br>
       <img src="names/grace.png" class="project" align="center"><br><br><br><br>
       <div class="row">
         <div class="column">
@@ -277,8 +305,11 @@
         </div>
         <div class="column blurb">Grace Lee Boggs</div>
       </div>
+      </div>
+      <br><br>
 
       <!-- Simon Tam -->
+      <div id="simon2"><br><br><br><br>
       <img src="names/simon.png" class="project" align="center"><br><br><br><br>
       <div class="row">
         <div class="column">
@@ -297,8 +328,11 @@
         </div>
         <div class="column blurb">Simon Tam</div>
       </div>
-
+      </div>
+      <br><br><br>
+      
       <!-- Arn Chorn-Pond -->
+      <div id="arn2"><br><br><br><br>
       <img src="names/arn.png" class="project" align="center"><br><br><br><br>
       <div class="row">
         <div class="column">
@@ -317,128 +351,147 @@
         </div>
         <div class="column blurb">Arn Chorn-Pond</div>
       </div>
-
+      </div>
+      <br><br>
+      
       <!-- Kalpana Chawla -->
-      <img src="names/kalpana.png" class="project" align="center"><br><br><br><br>
-      <div class="row">
-        <div class="column">
-          <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-            <div class="flipper">
-              <div class="front">
-                <!-- front content -->
-                <img src="images/squares/kalpana.png" class="project">
-              </div>
-              <div class="back">
-                <!-- back content -->
-                <img src="photos/kalpana.jpg" class="photo">
+      <div id="kalpana2"><br><br><br><br>
+        <img src="names/kalpana.png" class="project" align="center"><br><br><br><br>
+        <div class="row">
+          <div class="column">
+            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+              <div class="flipper">
+                <div class="front">
+                  <!-- front content -->
+                  <img src="images/squares/kalpana.png" class="project">
+                </div>
+                <div class="back">
+                  <!-- back content -->
+                  <img src="photos/kalpana.jpg" class="photo">
+                </div>
               </div>
             </div>
           </div>
+          <div class="column blurb">Kalpana Chawla</div>
         </div>
-        <div class="column blurb">Kalpana Chawla</div>
       </div>
+      <br><br>
+
 
       <!-- Chanchanit -->
-      <img src="names/chanchanit.png" class="project" align="center"><br><br><br><br>
-      <div class="row">
-        <div class="column">
-          <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-            <div class="flipper">
-              <div class="front">
-                <!-- front content -->
-                <img src="images/squares/chanchanit.png" class="project">
-              </div>
-              <div class="back">
-                <!-- back content -->
-                <img src="photos/chanchanit.jpg" class="photo">
+      <div id="chanchanit2"><br><br><br><br>
+        <img src="names/chanchanit.png" class="project" align="center"><br><br><br><br>
+        <div class="row">
+          <div class="column">
+            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+              <div class="flipper">
+                <div class="front">
+                  <!-- front content -->
+                  <img src="images/squares/chanchanit.png" class="project">
+                </div>
+                <div class="back">
+                  <!-- back content -->
+                  <img src="photos/chanchanit.jpg" class="photo">
+                </div>
               </div>
             </div>
           </div>
+          <div class="column blurb">Chanchanit Martorell</div>
         </div>
-        <div class="column blurb">Chanchanit Martorell</div>
       </div>
-
+      <br><br><br>
+      
+      
       <!-- Larry Itliong -->
-      <img src="names/larry.png" class="project" align="center"><br><br><br><br>
-      <div class="row">
-        <div class="column">
-          <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-            <div class="flipper">
-              <div class="front">
-                <!-- front content -->
-                <img src="images/squares/larry.png" class="project">
-              </div>
-              <div class="back">
-                <!-- back content -->
-                <img src="photos/larry.jpg" class="photo">
+      <div id="larry2"><br><br><br><br>
+        <img src="names/larry.png" class="project" align="center"><br><br><br><br>
+        <div class="row">
+          <div class="column">
+            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+              <div class="flipper">
+                <div class="front">
+                  <!-- front content -->
+                  <img src="images/squares/larry.png" class="project">
+                </div>
+                <div class="back">
+                  <!-- back content -->
+                  <img src="photos/larry.jpg" class="photo">
+                </div>
               </div>
             </div>
           </div>
+          <div class="column blurb">Larry Itliong</div>
         </div>
-        <div class="column blurb">Larry Itliong</div>
       </div>
+      <br><br>
 
       <!-- Patsy Mink -->
+      <div id="patsy2"><br><br><br><br>
       <img src="names/patsy.png" class="project" align="center"><br><br><br><br>
-      <div class="row">
-        <div class="column">
-          <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-            <div class="flipper">
-              <div class="front">
-                <!-- front content -->
-                <img src="images/squares/patsy.png" class="project">
-              </div>
-              <div class="back">
-                <!-- back content -->
-                <img src="photos/patsy.png" class="photo">
+        <div class="row">
+          <div class="column">
+            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+              <div class="flipper">
+                <div class="front">
+                  <!-- front content -->
+                  <img src="images/squares/patsy.png" class="project">
+                </div>
+                <div class="back">
+                  <!-- back content -->
+                  <img src="photos/patsy.png" class="photo">
+                </div>
               </div>
             </div>
           </div>
+          <div class="column blurb">Patsy Mink</div>
         </div>
-        <div class="column blurb">Patsy Mink</div>
       </div>
-
+      <br><br><br>
+      
       <!-- Lala Laipat Rai -->
-      <img src="names/lala.png" class="project" align="center"><br><br><br><br>
-      <div class="row">
-        <div class="column">
-          <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-            <div class="flipper">
-              <div class="front">
-                <!-- front content -->
-                <img src="images/squares/lala.png" class="project">
-              </div>
-              <div class="back">
-                <!-- back content -->
-                <img src="photos/lala.png" class="photo">
+      <div id="lala2"><br><br><br><br>
+        <img src="names/lala.png" class="project" align="center"><br><br><br><br>
+        <div class="row">
+          <div class="column">
+            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+              <div class="flipper">
+                <div class="front">
+                  <!-- front content -->
+                  <img src="images/squares/lala.png" class="project">
+                </div>
+                <div class="back">
+                  <!-- back content -->
+                  <img src="photos/lala.png" class="photo">
+                </div>
               </div>
             </div>
           </div>
+          <div class="column blurb">Lala Laipat Rai</div>
         </div>
-        <div class="column blurb">Lala Laipat Rai</div>
       </div>
-
+      <br><br><br>
+      
       <!-- Sally Chen -->
-      <img src="names/sally.png" class="project" align="center"><br><br><br><br>
-      <div class="row">
-        <div class="column">
-          <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-            <div class="flipper">
-              <div class="front">
-                <!-- front content -->
-                <img src="images/squares/sally.png" class="project">
-              </div>
-              <div class="back">
-                <!-- back content -->
-                <img src="photos/sally.jpg" class="photo">
+      <div id="sally2"><br><br><br><br>
+        <img src="names/sally.png" class="project" align="center"><br><br><br><br>
+        <div class="row">
+          <div class="column">
+            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+              <div class="flipper">
+                <div class="front">
+                  <!-- front content -->
+                  <img src="images/squares/sally.png" class="project">
+                </div>
+                <div class="back">
+                  <!-- back content -->
+                  <img src="photos/sally.jpg" class="photo">
+                </div>
               </div>
             </div>
           </div>
+          <div class="column blurb">Sally Chen</div>
         </div>
-        <div class="column blurb">Sally Chen</div>
       </div>
-
-      <p>"A single seed can turn into a forest. A single heart can transform a nation."<br> - Bryan Thao Worra</p>
 
     </article>
 
@@ -450,6 +503,110 @@
       var rellaxNonCentered = new Rellax('.rellax-non-centered', {
         center: false
       });
+
+      // animates the first button
+      $(".button").click(function() {
+      $('html, body').animate({
+          scrollTop: $("#instruct").offset().top},
+          'slow');
+      });
+
+      $("#yuri1").click(function() {
+      $('html, body').animate({
+          scrollTop: $("#yuri2").offset().top},
+          'slow');
+      });
+      
+      $("#may1").click(function() {
+      $('html, body').animate({
+          scrollTop: $("#may2").offset().top},
+          'slow');
+      });
+
+      $("#arn1").click(function() {
+      $('html, body').animate({
+          scrollTop: $("#arn2").offset().top},
+          'slow');
+      });
+
+      $("#chanchanit1").click(function() {
+      $('html, body').animate({
+          scrollTop: $("#chanchanit2").offset().top},
+          'slow');
+      });
+
+      $("#eqbal1").click(function() {
+      $('html, body').animate({
+          scrollTop: $("#eqbal2").offset().top},
+          'slow');
+      });
+
+      $("#fred1").click(function() {
+      $('html, body').animate({
+          scrollTop: $("#fred2").offset().top},
+          'slow');
+      });
+
+      $("#grace1").click(function() {
+      $('html, body').animate({
+          scrollTop: $("#grace2").offset().top},
+          'slow');
+      });
+
+      $("#helen1").click(function() {
+      $('html, body').animate({
+          scrollTop: $("#helen2").offset().top},
+          'slow');
+      });
+
+      $("#john1").click(function() {
+      $('html, body').animate({
+          scrollTop: $("#john2").offset().top},
+          'slow');
+      });
+
+      $("#kalpana1").click(function() {
+      $('html, body').animate({
+          scrollTop: $("#kalpana2").offset().top},
+          'slow');
+      });
+
+      $("#lala1").click(function() {
+      $('html, body').animate({
+          scrollTop: $("#lala2").offset().top},
+          'slow');
+      });
+
+      $("#larry1").click(function() {
+      $('html, body').animate({
+          scrollTop: $("#larry2").offset().top},
+          'slow');
+      });
+
+      $("#patsy1").click(function() {
+      $('html, body').animate({
+          scrollTop: $("#patsy2").offset().top},
+          'slow');
+      });
+
+      $("#philip1").click(function() {
+      $('html, body').animate({
+          scrollTop: $("#philip2").offset().top},
+          'slow');
+      });
+
+      $("#sally1").click(function() {
+      $('html, body').animate({
+          scrollTop: $("#sally2").offset().top},
+          'slow');
+      });
+
+      $("#simon1").click(function() {
+      $('html, body').animate({
+          scrollTop: $("#simon2").offset().top},
+          'slow');
+      });
+
     </script>
   </body>
 </html>

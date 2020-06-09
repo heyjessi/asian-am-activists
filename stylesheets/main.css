@@ -81,8 +81,8 @@ flex: 50%;
 } */
 
 /* made mirage */
-@font-face { font-family: MADE Mirage; src: url('MADE-Mirage.otf'); } 
-@font-face { font-family: MADE Mirage; font-weight: bold; src: url('MADE-Mirage-Bold.otf');}
+@font-face { font-family: MADE Mirage; src: url('../MADE-Mirage-Reg.otf'); } 
+@font-face { font-family: MADE Mirage; font-weight: bold; src: url('../MADE-Mirage-Bold.otf');}
 
 /* inconsolata */
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
