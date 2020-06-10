@@ -29,15 +29,15 @@ header:after {
 
 .button {
   position: absolute;
-  top: 4vh;
-  right: 6vh;
-  font-size: 2vw;
+  top: 3vh;
+  right: 4vh;
+  font-size: 1.25vw;
   font-family: Inconsolata;
   color: black;
   background-color: #ffc220; /* Green */
   /* border: 2px solid white; */
   border: none;
-  padding: 3vh 3vh;
+  padding: 2vh 2vh;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -83,7 +83,25 @@ img {
   /* border-radius: 30px; */
 }
 
+.directory {
+  border-radius: 25px;
+  margin:10px;
+}
+
+.directory:hover{
+  /* -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s; */
+  transition:.25s;
+  box-shadow: 5px 5px #ffc220;
+}
+
 .photo {
+  border-radius: 25px;
+}
+
+.jess {
   border-radius: 25px;
 }
 
