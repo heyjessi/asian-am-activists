@@ -28,16 +28,16 @@ header:after {
 }
 
 .button {
-  position: absolute;
-  top: 3vh;
-  right: 4vh;
-  font-size: 1.25vw;
+  position: fixed;
+  top: 2vh;
+  right: 2vh;
+  font-size: 1vw;
   font-family: Inconsolata;
   color: black;
   background-color: #ffc220; /* Green */
   /* border: 2px solid white; */
   border: none;
-  padding: 2vh 2vh;
+  padding: 1vh 1vh;
   text-align: center;
   text-decoration: none;
   display: inline-block;

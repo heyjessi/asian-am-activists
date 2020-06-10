@@ -14,7 +14,7 @@
   <body>
 
     <header class="header">
-      <button type="button" class="button">Go to Activists</button>
+      <button type="button" class="button">Go to Activist Directory</button>
       <h1 class="heading rellax-non-centered" data-rellax-speed="-5">A Young Organizer's Guide to Asian American Activists</h1>
     </header>
     <article class="content">
@@ -57,8 +57,8 @@
         </div>
       </div>
       <p></p> -->
-
-      <div align="center" class="mirage"><b>Sixteen Inspiring Asian American Activists</b></div><br>
+      
+      <div align="center" class="mirage direct"><br><b>Sixteen Inspiring Asian American Activists</b></div><br>
       <div class="blurb" align="center">Click on an actvist to see their bio</div><br>
       <div class="row" align="center"> 
         <div class="column">
@@ -620,7 +620,7 @@
       // animates the first button
       $(".button").click(function() {
       $('html, body').animate({
-          scrollTop: $("#instruct").offset().top},
+          scrollTop: $(".direct").offset().top},
           'slow');
       });
 
