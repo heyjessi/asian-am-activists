@@ -145,7 +145,7 @@ p, li {
 
 .quote {
   font-family: 'MADE Mirage Med', Georgia, 'Times New Roman', Times, serif;
-  size:10px;
+  font-size: 2.15em;
   color: #e0c2ff;
 }
 
@@ -296,7 +296,14 @@ html, body {
   width: 80%;
 }
 
+.lowell {
+  background-color: gray;
+  padding:15px;
+  opacity: 70%;
+}
+
+
 p {
-  font-size: 4.15vw;
+  font-size: 3.5vw;
   margin: 6em auto;
 }
