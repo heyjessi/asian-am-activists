@@ -56,6 +56,10 @@ main {
   /* flex-wrap: wrap; */
 }
 
+.acinfo {
+  flex-wrap: wrap;
+}
+
 .column {
 flex: 50%;
 }
