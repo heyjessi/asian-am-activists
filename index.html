@@ -26,15 +26,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   </head>
-  <body>
+  <body onload="myFunction()">
+    <div id="loader"></div>
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0" nonce="7V7z7Kmu"></script>
 
-    <header class="header">
+    <header class="header" style="display:none;" id="header">
       <button type="button" class="button">Return to Activist <br> Directory</button>
       <h1 class="heading rellax-non-centered" data-rellax-speed="-5">A Young Organizer's Guide to Asian American Activists</h1>
     </header>
-    <article class="content">
+    <article class="content" style="display:none;" id="content">
 
       <p class="quote"><b>"Because you are young and have dreams and want to do something meaningful, that in itself, makes you our future and our hope."<br><br>- Yuri Kochiyama</div></b></p>
       <p class="med">My name is Jess. I am third-generation Chinese American. I was born and raised in San Francisco. I attended Lowell High School, where over 56% of the student population identifies as Asian.</p>
@@ -48,63 +49,64 @@
       <p class="quote" align="center"><b>Learn their names. Learn their stories. Learn allyship.</b></p>
       
       <div align="center" class="mirage direct"><br><b>Sixteen Inspiring Asian American Activists</b></div><br>
-      <div class="blurb" align="center">Click on an actvist to see their bio</div><br>
+      <div class="blurb" id="instruct" align="center">Click on an actvist to see their bio</div><br>
+      <div class="blurb" id="instruct_name" style="display:none;" align="center">hi</div><br>
       <div class="row" align="center"> 
         <div class="column">
-            <img src="images/squares/yuri.png" class="directory" id="yuri1">
+            <img src="images/squares/yuri.png" class="directory yuri1" id="Yuri Kochiyama" onmouseover="getid(this);">
         </div>
         <div class="column">
-            <img src="images/squares/simon.png" class="directory" id="simon1">
+            <img src="images/squares/simon.png" class="directory simon1" id="Simon Tam" onmouseover="getid(this);">
         </div>
         <div class="column">
-            <img src="images/squares/sally.png" class="directory" id="sally1">
+            <img src="images/squares/sally.png" class="directory sally1" id="Sally Chen" onmouseover="getid(this);">
         </div>
         <div class="column">
-            <img src="images/squares/nury.png" class="directory" id="nury1">
+            <img src="images/squares/nury.png" class="directory nury1" id="Nury Turkel" onmouseover="getid(this);">
         </div>
       </div>
       <div class="row" align="center"> 
         <div class="column">
-            <img src="images/squares/grace.png" class="directory" id="grace1">
+            <img src="images/squares/grace.png" class="directory grace1" id="Grace Lee Boggs" onmouseover="getid(this);">
         </div>
         <div class="column">
-            <img src="images/squares/fred.png" class="directory" id="fred1">
+            <img src="images/squares/fred.png" class="directory" id="Fred Ho" onmouseover="getid(this);">
         </div>
         <div class="column">
-            <img src="images/squares/chanchanit.png" class="directory" id="chanchanit1">
+            <img src="images/squares/chanchanit.png" class="directory chanchanit1" id="Chanchanit Martorell" onmouseover="getid(this);">
         </div>
         <div class="column">
-          <img src="images/squares/patsy.png" class="directory" id="patsy1">
-        </div>
-      </div>
-
-      <div class="row" align="center"> 
-        <div class="column">
-            <img src="images/squares/helen.png" class="directory" id="helen1">
-        </div>
-        <div class="column">
-            <img src="images/squares/arn.png" class="directory" id="arn1">
-        </div>
-        <div class="column">
-            <img src="images/squares/kalpana.png" class="directory" id="kalpana1">
-        </div>
-        <div class="column">
-          <img src="images/squares/eqbal.png" class="directory" id="eqbal1">
+          <img src="images/squares/patsy.png" class="directory patsy1" id="Patsy Mink" onmouseover="getid(this);">
         </div>
       </div>
 
       <div class="row" align="center"> 
         <div class="column">
-            <img src="images/squares/lala.png" class="directory" id="lala1">
+            <img src="images/squares/helen.png" class="directory helen1" id="Helen Zia" onmouseover="getid(this);">
         </div>
         <div class="column">
-            <img src="images/squares/larry.png" class="directory" id="larry1">
+            <img src="images/squares/arn.png" class="directory arn1" id="Arn Chorn-Pond" onmouseover="getid(this);">
         </div>
         <div class="column">
-          <img src="images/squares/may.png" class="directory" id="may1">
+            <img src="images/squares/kalpana.png" class="directory kalpana1" id="Kalpana Chawla" onmouseover="getid(this);">
         </div>
         <div class="column">
-          <img src="images/squares/john.png" class="directory" id="john1">
+          <img src="images/squares/eqbal.png" class="directory eqbal1" id="Eqbal Ahmad" onmouseover="getid(this);">
+        </div>
+      </div>
+
+      <div class="row" align="center"> 
+        <div class="column">
+            <img src="images/squares/lala.png" class="directory lala1" id="Lala Laipat Rai" onmouseover="getid(this);">
+        </div>
+        <div class="column">
+            <img src="images/squares/larry.png" class="directory larry1" id="Larry Itliong" onmouseover="getid(this);">
+        </div>
+        <div class="column">
+          <img src="images/squares/may.png" class="directory may1" id="May Chen" onmouseover="getid(this);">
+        </div>
+        <div class="column">
+          <img src="images/squares/john.png" class="directory john1" id="John Cho" onmouseover="getid(this);">
       </div>
       </div>
       <p></p>
@@ -767,6 +769,7 @@
       <p></p>
 
     </article>
+    <!-- </div> -->
 
     <script src="./javascripts/rellax.min.js"></script>
     <script>
@@ -784,103 +787,111 @@
           'slow');
       });
 
-      $("#yuri1").click(function() {
+      $(".yuri1").click(function() {
       $('html, body').animate({
           scrollTop: $("#yuri2").offset().top},
           'slow');
       });
       
-      $("#may1").click(function() {
+      $(".may1").click(function() {
       $('html, body').animate({
           scrollTop: $("#may2").offset().top},
           'slow');
       });
 
-      $("#arn1").click(function() {
+      $(".arn1").click(function() {
       $('html, body').animate({
           scrollTop: $("#arn2").offset().top},
           'slow');
       });
 
-      $("#chanchanit1").click(function() {
+      $(".chanchanit1").click(function() {
       $('html, body').animate({
           scrollTop: $("#chanchanit2").offset().top},
           'slow');
       });
 
-      $("#eqbal1").click(function() {
+      $(".eqbal1").click(function() {
       $('html, body').animate({
           scrollTop: $("#eqbal2").offset().top},
           'slow');
       });
 
-      $("#fred1").click(function() {
+      $(".fred1").click(function() {
       $('html, body').animate({
           scrollTop: $("#fred2").offset().top},
           'slow');
       });
 
-      $("#grace1").click(function() {
+      $(".grace1").click(function() {
       $('html, body').animate({
           scrollTop: $("#grace2").offset().top},
           'slow');
       });
 
-      $("#helen1").click(function() {
+      $(".helen1").click(function() {
       $('html, body').animate({
           scrollTop: $("#helen2").offset().top},
           'slow');
       });
 
-      $("#john1").click(function() {
+      $(".john1").click(function() {
       $('html, body').animate({
           scrollTop: $("#john2").offset().top},
           'slow');
       });
 
-      $("#kalpana1").click(function() {
+      $(".kalpana1").click(function() {
       $('html, body').animate({
           scrollTop: $("#kalpana2").offset().top},
           'slow');
       });
 
-      $("#lala1").click(function() {
+      $(".lala1").click(function() {
       $('html, body').animate({
           scrollTop: $("#lala2").offset().top},
           'slow');
       });
 
-      $("#larry1").click(function() {
+      $(".larry1").click(function() {
       $('html, body').animate({
           scrollTop: $("#larry2").offset().top},
           'slow');
       });
 
-      $("#patsy1").click(function() {
+      $(".patsy1").click(function() {
       $('html, body').animate({
           scrollTop: $("#patsy2").offset().top},
           'slow');
       });
 
-      $("#nury1").click(function() {
+      $(".nury1").click(function() {
       $('html, body').animate({
           scrollTop: $("#nury2").offset().top},
           'slow');
       });
 
-      $("#sally1").click(function() {
+      $(".sally1").click(function() {
       $('html, body').animate({
           scrollTop: $("#sally2").offset().top},
           'slow');
       });
 
-      $("#simon1").click(function() {
+      $(".simon1").click(function() {
       $('html, body').animate({
           scrollTop: $("#simon2").offset().top},
           'slow');
       });
 
-            $(document).ready( function() {
+      function getid(obj) {
+        document.getElementById("instruct").style.display = "none";
+        document.getElementById("instruct_name").style.display = "block";
+        $("#instruct_name").html(obj.id);
+
+      }
+
+      function hidebutton() {
+        $(document).ready( function() {
           $(".button").hide(); //hide your div initially
           var topOfOthDiv = $(".mirage").offset().top;
           $(window).scroll(function() {
@@ -889,6 +900,21 @@
               }
           });
       });
+      }
+            
+
+    var myVar;
+
+    function myFunction() {
+      myVar = setTimeout(showPage, 3000);
+      myVar = setTimeout(hidebutton, 3000);
+    }
+
+    function showPage() {
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("header").style.display = "block";
+      document.getElementById("content").style.display = "block";
+    }
 
     </script>
   </body>
